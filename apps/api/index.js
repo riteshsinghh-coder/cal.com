@@ -11,7 +11,7 @@ const apiProxyV2 = createProxyMiddleware({
 });
 
 const app = connect();
-app.use("/", apiProxyV1);
+
 
 app.use("/v2", apiProxyV2);
 
